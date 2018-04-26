@@ -127,6 +127,10 @@ void LCD_Display()
   {
 
     lcd.clear();
+    if(FinalSrc==FinalDst)
+    {
+      lcd.print("Error"); 
+    }
     lcd.setCursor(5, 0);
     lcd.print("Play");
   }
@@ -136,6 +140,8 @@ void LCD_Display()
     lcd.print("Pause");
     delay(1000);
     lcd.clear();
+    FinalSrc=0;
+    FinalDst=0;
     Pause = 0;
 
   }
