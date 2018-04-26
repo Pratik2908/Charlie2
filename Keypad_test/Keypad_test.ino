@@ -21,11 +21,11 @@ char keys[ROWS][COLS] = {
 
 // Connect keypad ROW0, ROW1, ROW2 and ROW3 to these Arduino pins.
 
-byte rowPins[ROWS] = { 0, 1, 2, 3 };
+byte rowPins[ROWS] = { 8, 9, 10, 11 };
 
 // Connect keypad COL0, COL1 and COL2 to these Arduino pins.
 
-byte colPins[COLS] = { 4, 5, 6, 7 };
+byte colPins[COLS] = { 12, 13, A0, A1 };
 
 //  Create the Keypad
 
